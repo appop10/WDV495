@@ -1,0 +1,495 @@
+$color1: #72DDF7;
+$color1-transparent: #72ddf7c7;
+$color2: #19647E;
+$color2-drop-down: #2f8faf;
+$color3: #cdf772;
+$color3-transparent: #cdf772c7;
+$color4: #04030F;
+$color5: #eaeaea;
+
+@mixin section-width-alignment {
+    width: 95%;
+    margin: 8em auto;
+}
+@mixin rows-flex {
+    display: flex;
+    flex-direction: column;
+}
+@mixin cols-flex-margin {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $color4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+nav {
+    background-color: $color2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    p {
+        font-size: 1.75em;
+        margin: 0.5em 1em;
+    }
+    ul.main-nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        margin-right: 2em;
+        font-size: 1.2em;
+
+        li.drop-down {
+            ul {
+                flex-direction: column;
+                position: absolute;
+                top: 3.2em;
+                background-color: $color2-drop-down;
+                width: fit-content;
+                height: 0;
+                overflow: hidden;
+                transition: height 0.45s ease-in;
+                
+                li {
+                    padding: 0.75em 0.5em;
+                }
+            }
+            ul.dropping-menu {
+                height: 160px;
+            }
+        }
+        span.drop-down-arrow {
+            position: absolute;
+            font-size: 1.3em;
+            margin-left: 0.5em;
+            margin-top: -0.1em;
+            transform: rotate(90deg);
+            transition: transform 0.35s ease-in;
+        }
+        span.drop-down-arrow.rotate-arrow {
+            transform: rotate(-90deg);
+        }
+        li.drop-down:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+header {
+    height: 80vh;
+    background-image: url('../images/two-workers.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+
+    div.intro-blurb {
+        position: absolute;
+        width: 35%;
+        z-index: 2;
+
+        h1 {
+            font-size: 2.3em;
+            margin-bottom: 1em;
+        }
+        p {
+            padding-right: 2em;
+            margin-bottom: 2em;
+            margin-left: 1.5em;
+        }
+        button {
+            padding: 1em 1.5em;
+            margin-left: 3.5em;
+            font-size: 1.2em;
+            border: none;
+            background-color: $color2;
+            color: $color5;
+        }
+    }
+    div.sky-blue-background {
+        position: relative;
+        left: 35vw;
+        width: 35vw;
+        height: 100%;
+        background-color: $color3-transparent;
+        transform: skewX(-20deg);
+    }
+    div.sky-blue-2 {
+        position: relative;
+        left: 0;
+        width: 35vw;
+        height: 100%;
+        background-color: $color1-transparent;
+        transform: skewX(20deg);
+    }
+}
+
+h2.section-title {
+    display: flex; 
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 1em;
+    border-bottom: 3px solid $color2;
+
+    a {
+        color: $color4;
+        font-size: 0.75em;
+        margin-bottom: 0.1em;
+    }
+}
+
+div.blue-backgrounds {
+    a:nth-child(1) {
+        background-image: url('../images/constuction-workers-building-a-home.jpg');
+        background-size: 100%;
+    }
+    a:nth-child(2) {
+        background-image: url('../images/house-remodeling-process.jpg');
+        background-size: 100%;
+    }
+    a:nth-child(3) {
+        background-image: url('../images/Construction_Solutions_Cincinnati_Ohio_Siding_Repair_Company.jpg');
+        background-size: 100%;
+    }
+    p {
+        background-color: $color1-transparent;
+    }
+}
+div.green-backgrounds {
+    a:nth-child(1) {
+        background-image: url('../images/metal-saw-cutting-rebar.jpg');
+        background-size: 100%;
+    }
+    a:nth-child(2) {
+        background-image: url('../images/home-remodeling.jpg');
+        background-size: 100%;
+    }
+    a:nth-child(3) {
+        background-image: url('../images/exterior-house-colors-you-should-avoid-at-all-costs.jpg');
+        background-size: 100%;
+    }
+    p {
+        background-color: $color3-transparent;
+    }
+}
+
+.services-section {
+    @include section-width-alignment;
+
+    div.services-row {
+        @include rows-flex;
+
+        div.services-cols {
+            @include cols-flex-margin;
+
+            a {
+                width: 30%;
+                height: 20vh;
+            }
+            p {
+                height: 100%;
+                width: 50%;
+                font-size: 1.3em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 1em;
+            }
+        }
+    }
+}
+
+.projects-section {
+    @include section-width-alignment;
+
+    div.projects-row {
+        @include rows-flex;
+        
+        div.projects-col {
+            @include cols-flex-margin;
+            height: 38vh;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            p {
+                position: relative;
+                bottom: 10.5vh;
+                height: 0;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0;
+                transition: height 0.5s ease-in;
+            }
+        }
+        div.projects-col div:hover {
+            p {
+                height: 10vh;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: $color1;
+    font-size: 1.2em;
+
+    ul {
+        list-style-type: none;
+        width: 35%;
+        padding-left: 1.2em;
+        
+        li {
+            line-height: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        li strong {
+            font-size: 1.3em;
+        }
+    }
+    ul.address {
+        padding-top: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 1190px) {
+    nav {
+        ul.main-nav {
+            position: absolute;
+            top: 3.5em;
+            right: 0;
+            flex-direction: column;
+            margin-right: 0;
+            padding-left: 0;
+            padding-top: 0;
+            background-color: $color2-drop-down;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            justify-content: flex-start;
+            transition-property: height, width, padding-left, padding-top;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+
+            li {
+                padding: 1em;
+            }
+            li.drop-down {
+                
+                ul {
+                    position: relative;
+                    top: 0;
+                    padding-top: 1em;
+                }
+            }
+        }
+        ul.slide-menu {
+            height: calc(100vh - 3.5em);
+            width: 45%;
+            padding-left: 3em;
+            padding-top: 3.5em;
+        }
+        div.hamburger-menu {
+            transition: transform 0.75s ease-in;
+    
+            p {
+                height: 0.5vh;
+                width: 5vw;
+                background-color: $color5; 
+                transition: transform 0.3s ease-in, opacity 0.3s ease-in; 
+            }
+            p:nth-child(1).rotate-down {
+                transform: rotateZ(45deg) translate(12px, 13px);
+            }
+            p:nth-child(2).disappear {
+                opacity: 0;
+            }
+            p:nth-child(3).rotate-up {
+                transform: rotateZ(-45deg) translate(12px, -13px);
+            }
+        }
+        div.rotate-menu {
+            @keyframes blink-out-in {
+                0% {opacity: 100%}
+                50% {opacity: 0%}
+                100% {opacity: 100%}
+            }
+            animation-name: blink-out-in;
+            animation-duration: 0.75s;
+            transform: rotate(180deg);
+        }
+    }
+
+    .services-section {
+        div.services-row {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+
+            div.services-cols {
+                flex-direction: column;
+                width: 45%;
+
+                a {
+                    width: 100%;
+                    margin: 1em 0;
+                }
+            }
+        }
+    }
+
+    .projects-section {
+
+        div.projects-row {
+            flex-direction: row;
+            justify-content: space-between;
+
+            div.projects-col {
+                flex-direction: column;
+                width: 47%;
+                height: fit-content;
+
+                p {
+                    height: 10vh;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    header {
+        height: calc(100vh - 4em);
+        flex-direction: column;
+
+        div.intro-blurb {
+            width: 65%;
+            right: 0;
+            bottom: 0;
+            text-align: right;
+            padding: 3em;
+
+            h1 {
+                font-size: 2em;
+            }
+            p, button {
+                margin-left: 0;
+            }
+            p {
+                padding-right: 0;
+            }
+        }
+        div.sky-blue-background {
+            transform: skew(10deg);
+            width: 100%;
+        }
+        div.sky-blue-2 {
+            transform: skew(-10deg);
+            width: 100%;
+            left: 35vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        ul.main-nav {
+            width: 100%;
+            top: 3em;
+        }
+        ul.slide-menu {
+            height: calc(100vh - 3em);
+        }
+        div.hamburger-menu {
+            p {
+                height: 0.3vh;
+                width: 5vw;
+                margin: 1vh 1em;
+            }
+            p:nth-child(1).rotate-down {
+                transform: rotateZ(45deg) translate(5px, 10px);
+            }
+            p:nth-child(3).rotate-up {
+                transform: rotateZ(-45deg) translate(5px, -10px);
+            }
+        }
+    }
+
+    header {
+        div.intro-blurb {
+            width: 100%;
+
+            h1 {
+                margin-bottom: 3em;
+            }
+        }
+        div.sky-blue-background, div.sky-blue-2 {
+            transform: skew(0);
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    .services-section {
+        div.services-row {
+            flex-direction: column;
+
+            div.services-cols {
+                width: 100%;
+
+                a {
+                    margin: 1vh 0;
+                }
+            }
+        }
+    }
+
+    .projects-section {
+        div.projects-row {
+            flex-direction: column;
+
+            div.projects-col {
+                width: 100%;
+            }
+        }
+    }
+
+    footer {
+        flex-direction: column;
+
+        ul {
+            width: 100%;
+        }
+        ul.address {
+            margin-bottom: 2em;
+        }
+    }
+}

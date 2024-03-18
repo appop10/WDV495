@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generative AI Example 2">
+    <title>Gen AI Ex 2</title>
+
+    <link rel="stylesheet" href="stylesheets/main-stylesheet.css">
+    <script src="mainFunctions.js"></script>
+</head>
+<body>
+    <h1>Generative AI Example 2</h1>
+
+    <main>
+        <section id="image-gallery" class="image-gallery-container hide-section">
+            <div>
+                <img src="images/baby-emerald-dragon.jpeg" alt="baby emerald dragon">
+                <img src="images/baby-griffon-ish-creature.jpeg" alt="attempt at a baby griffon">
+                <img src="images/edited-baby-griffon-ish-creature.png" alt="attempt at a baby griffon edited to have a different background, flowers, and a bird friend">
+                <img src="images/sci-fi-scene.jpeg" alt="woman sitting in front of a window to outer space in futuristic space station">
+                <img src="images/mini-terrarium-1.jpeg" alt="miniature terrariumn on a bookshelf version 1">
+                <img src="images/mini-terrarium-2.jpeg" alt="miniature terrariumn on a bookshelf version 2">
+                <img src="images/mini-terrarium-3.jpeg" alt="miniature terrariumn on a bookshelf version 3">
+                <img src="images/mini-terrarium-4.jpeg" alt="miniature terrariumn on a bookshelf version 4">
+                <img src="images/mini-terrarium-5.jpeg" alt="miniature terrariumn on a bookshelf version 5">
+                <img src="images/mini-terrarium-6.jpeg" alt="miniature terrariumn on a bookshelf version 6">
+                <img src="images/mini-terrarium-7.jpeg" alt="miniature terrariumn on a bookshelf version 7">
+                <img src="images/cat-and-dog-graphic.jpeg" alt="cat and dog line graphic with a gradient background">
+                <img src="images/ice-age.jpeg" alt="graphic letters with icicle texture saying Ice Age">
+                <img src="images/dessert.jpeg" alt="graphic letters with cake texture saying Dessert">
+                <img src="images/surfs-up.png" alt="graphic letters with sea glass texture saying Surf's Up">
+            </div>
+    
+            <a class="nav-button smaller" onclick="navigateTo(1, 0, 'out-left', 'in-right')">&rarr;</a>
+        </section>
+    
+        <section id="home-screen" class="home-screen-container">
+            <div class="nav-option">
+                <h2>Image Gallery</h2>
+                <a class="nav-button" onclick="navigateTo(-1, 1, 'out-right', 'in-left')">&larr;</a>
+            </div>
+    
+            <div class="nav-option">
+                <h2>Mini Game</h2>
+                <a class="nav-button" onclick="navigateTo(1, 1, 'out-left', 'in-right')">&rarr;</a>
+            </div>
+        </section>
+    
+        <section id="game-panel" class="game-panel-container hide-section">
+            <canvas id="gameCanvas" width="500" height="300"></canvas>
+            <script src="MiniGame.js"></script>
+    
+            <a class="nav-button smaller" onclick="navigateTo(-1, 2, 'out-right', 'in-left')">&larr;</a>
+        </section>
+    </main>
+</body>
+</html>

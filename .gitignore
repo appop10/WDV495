@@ -1,0 +1,12 @@
+# Ignore picture files
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Ignore word documents
+*.doc
+*.docx
+
+# Ignore text files
+*.txt

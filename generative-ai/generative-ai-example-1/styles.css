@@ -1,0 +1,242 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    height: 60vh; 
+    background-image: url('../../motion-ui/motion-ui-example/images/two-workers.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.header-title {
+    font-size: 3em; 
+    margin-bottom: 10px;
+    z-index: 3;
+}
+
+.header-text {
+    font-size: 1.5em; 
+    z-index: 3;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #19657eba;
+    z-index: 1;
+}
+
+.sticky-nav {
+    background-color: #72DDF7;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #72DDF7;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    max-height: 200px; 
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+    opacity: 1; 
+}
+
+.nav-link:hover,
+.dropdown:hover .nav-link,
+.dropdown-content a:hover {
+    background-color: #19647E; 
+}
+
+section {
+    padding: 2em;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.welcome-message {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px; 
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-section img {
+    width: 100%;
+    height: 60%; 
+    object-fit: cover; 
+    border: 1px solid #ddd; 
+    margin: 5px; 
+}
+
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-section img {
+    width: 100%;
+    height: 75%; 
+    object-fit: cover;
+    border: 1px solid #ddd; 
+    margin: 5px; 
+}
+
+footer {
+    background-color: #19647E;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .company-info {
+    margin-top: 1em;
+}
+
+footer nav {
+    margin-top: 1em;
+    background-color: #19647E;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    width: calc(33.33% - 2em);
+    margin-bottom: 2em;
+}
+
+.section-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.section-link a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #19647E;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-section {
+    background-color: #19647E;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section h2 {
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #fff;
+    color: #19647E;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #72DDF7;
+    color: #fff;
+}
+
+.company-name {
+    font-size: 1.5em; 
+    font-weight: bold; 
+}
+
+
+.footer-bottom {
+    margin-top: 1em; 
+}

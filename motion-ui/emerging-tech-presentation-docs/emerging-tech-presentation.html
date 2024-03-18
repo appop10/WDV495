@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emerging technologies topics assignment">
+    <meta name="author" content="Abby Poplawski">
+    <title>Emerging Technologies Topics</title>
+
+    <script src="emerging-tech-funcs.js"></script>
+    <link rel="stylesheet" href="emerging-tech-page-styles.css">
+
+    <!-- 
+        Working on:
+        - making mobile menu function
+        - making sections disappear when not needed?
+        - making back to top button not needed until scroll?
+    -->
+</head>
+<body onload="loadFunctions()">
+    <header>
+        <h1>Emerging Technologies</h1>
+    </header>
+
+    <ul class="navigation">
+        <li><a href="#mobile-first-design">Mobile First Design</a></li>
+        <li><a href="#motion-ui">Motion UI</a></li>
+        <li><a href="#graphql">GraphQL</a></li>
+    </ul>
+
+    <div id="back-button"><a href="emerging-tech-presentation.html">&#171;</a></div>
+
+    <section id="mobile-first-design">
+        <img src="emerging-tech-presentation-images/mobile-first-design-2.jpg" alt="mobile phone in front of blurry background of the ocean">
+        <h2>Mobile First Design</h2>
+
+        <h3>Sources</h3>
+        <ul>
+            <li><a href="https://www.browserstack.com/guide/how-to-implement-mobile-first-design" target="_blank">Mobile First Design: What it is and How to Implement it</a> &mdash; By Jash Unadkat</li>
+            <li><a href="https://www.techmagic.co/blog/best-practices-for-mobile-first-design/" target="_blank">Mobile-First Design: The Best Practices</a> &mdash; By Bohdana Muzyka</li>
+            <li><a href="https://www.lambdatest.com/blog/mobile-first-design/" target="_blank">A Complete Guide To Mobile First Design</a> &mdash; By Misba Kagad</li>
+            <li><a href="https://uxbooth.com/articles/where-do-we-go-from-mobile-first/" target="_blank">Where Do We Go from Mobile First?</a> &mdash; By Jess Vice</li>
+            <li><a href="https://www.appsflyer.com/blog/mobile-marketing/mobile-first-design/" target="_blank">The mobile-first design essentials for 2022</a> &mdash; By Einav Mor-Samuels</li>
+        </ul>
+
+        <h3>Overview</h3>
+        <p>Around 2010, as smartphones were cementing their place as the replacement for flip phones, the demand for mobile access to the internet increased, prompting web developers to recognize a need for websites to cater to a different user experience. Eventually Ethan Marcotte proposed a methodology for designing websites in a blog post called “Responsive Web Design” (Mor-Samuels), which seemed to comprehensively explain an approach to designing websites that emphasized layouts that could translate to any screen size. Later on, Google started prioritizing websites with better mobile experiences for users, thus setting the precedent that websites should strive to create excellent mobile designs for their websites. </p>
+        <p>Mobile First Design is a philosophy that aims to start with designing a website from the smallest screen size that would then get translated to bigger screens afterwards. By taking this approach, it focuses designers on the most pertinent information and features, making them more accessible to users right away.</p>
+
+        <h3>Examples</h3>
+        <p>Nike has both a mobile-first website and app (Mor-Samuels). It encourages users to download the app, which could then get them exclusive offers and rewards.</p>
+        <p>YouTube's dark mode and button spacing take into consideration smaller screens, attempting to reduce user's eye strain (Kagad)</p>
+        <p>Airbnb and Google use card design to group information and deliver it in a short, user-friendly way. "It's a design approach that simplifies the user experience by presenting information in bite-sized, visually appealing chunks, promoting quick understanding and decision-making" (Kagad).</p>
+
+        <h3>Motivations for Implementation</h3>
+        <p>A mobile-first approach to design would ensure a good user experience at every size of the website. With Graceful Degradation, where the design of the desktop comes first and then everything is sized down, certain elements might be lost or watered down to fit smaller screens, resulting in a diminished experience for mobile users. By starting at the smallest screen, designers can make sure mobile users aren't left out of experiencing all that a website seeks to offer them.</p>
+        <p>This in turn allows mobile-first designs to be more accessible. By considering a mobile user's needs for readability (Muzyka) and what they can comfortably reach within the what Misba Kagad refers to as the thumb zone, mobile-first designs allow more people to comfortably use their websites.</p>
+
+        <h3>Impacts on Industry</h3>
+        <p>Almost 5 billion people are active mobile internet users (Muzyka), and over half of all internet traffic comes from mobile devices (Unadkat). And both numbers are set to keep increasing, so it makes sense that, as more and more business is conducted via phone or smaller screen, having a mobile friendly site is a must have for companies and businesses to reach their target audiences. Therefore, as web designers and developers, we'll be expected to know how to build those websites and applications and make sure they work properly.</p>
+
+        <h3>Personal Opinion</h3>
+        <p>I find this philosophy impacts a lot of people whether they put it into practice or not. Since mobile traffic on the internet is increasing and will probably keep doing so, I find that it's a safe bet to make that companies want to have some sort of focus on making their websites mobile friendly. Whether you're part of the team that designs it or the team that implements it, you'll have to think about making the website or application work for a variety of small screens at some point. Personally, my goal is to get better at practicing it, even though my first inclination is to start with designing for desktop.</p>
+    </section>
+
+    <section id="motion-ui">
+        <img src="emerging-tech-presentation-images/motion-ui-3.jpg" alt="screen shot of unseen.co home page">
+        <h2>Motion UI</h2>
+
+        <h3>Sources</h3>
+        <ul>
+            <li><a href="https://bootcamp.uxdesign.cc/motion-ui-an-emerging-trend-in-frontend-development-83fdccdc26a5" target="_blank">Motion UI: An Emerging Trend in Frontend Development</a> &mdash; By Anamol Soman</li>
+            <li><a href="https://www.elsner.com/motion-ui-the-future-trend-of-digital-world/" target="_blank">Motion UI: The Future Trend of Digital World!</a> &mdash; By Drashti Gandhi</li>
+            <li><a href="https://origin-blog.mediatemple.net/design-creative/rebooting-the-web-experience-with-motion-ui/" target="_blank">Rebooting the Web Experience With Motion UI</a> &mdash; From Design + Creative</li>
+            <li><a href="https://blog.openreplay.com/role-of-motion-ui-in-modern-web-development/" target="_blank">The Role Of Motion UI In Modern Web Development</a> &mdash; By Glory Jonah</li>
+            <li><a href="https://zurb.com/blog/introducing-the-new-motion-ui" target="_blank">Introducing the New Motion UI</a> &mdash; By Geoff Olegario</li>
+            <li><a href="https://vipestudio.com/en/enhance-your-wordpress-website-with-motion-ui/" target="_blank">Enhance Your WordPress Website With Motion UI</a> &mdash; By VIPE Team in WordPress Design</li>
+        </ul>
+
+        <h3>Overview</h3>
+        <p>Motion UI can refer to both a web design concept and a Sass library. The concept revolves around use of motion elements in a website to enhance the user's experience, while the Sass library is intended to make it easier and smoother to incorporate animations into a website's UI.</p>
+        <p>The concept of motion UI grew from the use of motion elements as purely decorative accents to a principled discipline that sees motion as a form of engagement for the user. It can further break down into different types of motion, three of which are animation, transitions, and micro interactions.</p>
+        <p>Motion UI as a Sass library is attributed to ZURB, a design and development agency, and was introduced to the public back in 2015 and became open source around 2017. It allows users to incorporate pre-built animations and transitions without having to code their own JavaScript to make it work smoothly.</p>
+
+        <h3>Examples</h3>
+        <p>Some websites, like one I was recently introduced to - unseen.co, use animation and motion to make the website immersive. And a lot of functions that we see today on websites will fall under the principles of motion UI. Drop down menus, animated infographics, and progress bars are a few familiar elements that websites use help engage visitors, while some newer uses of motion UI include scroll-triggered animations, hover effects, and parallax scrolling effects.</p>
+
+        <h3>Motivations for Implementation</h3>
+        <p>Using the principles of motion UI, designers can highlight certain aspects of their websites, which would allow them to create a visual hierarchy of design elements. It would also allow them to help guide users around the website, while also making it more engaging. Other benefits to motion UI include increased user engagement and brand recognition, which can lead to repeat visits and longer retention rates.</p>
+
+        <h3>Impacts on Industry</h3>
+        <p>Since “our brains are hard-wired to respond to movement” (Design + Creative), dynamic elements and even small, subtle animations and transitions are trickling into even the most static of websites to attract and keep users' attention. And due to a general decrease in attention span (VIPE team), newer websites seeking recognition will want make use of motion UI principles to make their users' experiences memorable and engaging.</p>
+
+        <h3>Personal Opinion</h3>
+        <p>I personally really enjoy experiencing and creating animations and transitions for websites, probably because I've liked playing video games since I was young. That kind of experience with being engaged in a virtual environment that I could affect makes me happy to see that websites and the internet in general is moving towards creating that kind of interactive environment for everyone else. When it comes to the Motion UI library, I'm curious about whether it will allow me to expand my animation capabilities, and whether it indeed makes it easier for developers to incorporate animations.</p>
+    </section>
+
+    <section id="graphql">
+        <img src="emerging-tech-presentation-images/graphql.jpg" alt="light blue lines connecting together with cityscape in the background">
+        <h2>GraphQL</h2>
+
+        <h3>Sources</h3>
+        <ul>
+            <li><a href="https://graphql.org/" target="_blank">GraphQL home page</a> &mdash; From GraphQL</li>
+            <li><a href="https://www.cobalt.io/blog/graph-query-language-explained" target="_blank">Graph Query Language Explained</a> &mdash; By Harsh Bothra</li>
+            <li><a href="https://blog.hubspot.com/website/what-is-graphql" target="_blank">A Simple Guide to Understanding GraphQL</a> &mdash; By Danielle Richardson Ellis</li>
+            <li><a href="https://nonamesecurity.com/learn/what-is-graphql/" target="_blank">What is GraphQL?</a> &mdash; By Harold Bell</li>
+            <li><a href="https://nordicapis.com/6-examples-of-graphql-in-production-at-large-companies/" target="_blank">6 Examples of GraphQL in Production at Large Companies</a> &mdash; By Tyler Charboneau</li>
+        </ul>
+
+        <h3>Overview</h3>
+        <p>GraphQL is a query language and a runtime for API's that was developed by Facebook and released to the public in 2015. It was built using the principles of Graph Theory, which are “a set of mathematical concepts that describe how networks of objects (nodes) interact with each other” (Bell), and can be used with existing infrastructure according to Harsh Bothra. Similar to REST API's, it allows users to make a request to a server and receive a response; however, according to Harold Bell, GraphQL can make manipulating data from servers more efficient and flexible. It accomplishes this by making one request, instead of having to make multiple requests for different types of information.</p>
+
+        <h3>Examples</h3>
+        <p>(All provided by Tyler Charboneau)</p>
+        <p>PayPal has been using GraphQL since 2018, which has helped them standardize their approach to their UI development.</p>
+        <p>Shopify has integrated more GraphQL in its Admin API, creating a smoother experience for external developers, especially when it comes to client-server data mapping.</p>
+        <p>Coursera developed a “a GraphQL assembler service” to be able to communicate between their different APIs.</p>
+
+        <h3>Motivations for Implementation</h3>
+        <p>One of the advantages of GraphQL is its ability to make requesting data more compact. You can ask for multiple things in one request and get one response back. This leads to having just one endpoint, instead of the multiple you might need with REST APIs, which can save time and effort when servers process data from clients. It also has simpler syntax and is “designed to be language-agnostic” (Richardson Ellis), so it's supposed to be easier for developers to incorporate into their code.</p>
+        <p>Harold Bell mentions that there isn't an official standard to using GraphQL, so it may be difficult to find resources that would make working with it easier. Bell also mentions that the fewer endpoints that GraphQL generates might create more work in making requests because it's geared towards returning smaller pieces of data.</p>
+
+        <h3>Impacts on Industry</h3>
+        <p>According to its own website, a whole slew of companies have integrated GraphQL in their development, some that weren't mentioned in the examples being Airbnb, Dailymotion, Lyft and GitHub. As it makes requests to servers and communication between APIs easier for clients to handle, it looks like a promising query language to use for a wide variety of industries. Being designed to work across languages and platforms also makes it an attractive tool to use for developers and companies.</p>
+
+        <h3>Personal Opinion</h3>
+        <p>I have little to no experience working with REST APIs, which are the more common interfaces being used for now, so I was intrigued when I came across a mention of GraphQL. It seems like a promising query language since it can simplify and condense requests, and I appreciate that it has easier syntax, making it more friendly to learn.</p>
+    </section>
+</body>
+</html>
