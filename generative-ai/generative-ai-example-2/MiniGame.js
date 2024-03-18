@@ -43,11 +43,11 @@ class MiniGame {
     draw() {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         // Draw the t-rex
-        this.ctx.fillStyle = 'blue';
+        this.ctx.fillStyle = 'pink';
         this.ctx.fillRect(100, this.trexY, 50, 50);
 
         // Draw the obstacle
-        this.ctx.fillStyle = 'black';
+        this.ctx.fillStyle = 'grey';
         this.ctx.fillRect(this.obstacleX, 200, 30, 50);
 
         // Draw the ground
