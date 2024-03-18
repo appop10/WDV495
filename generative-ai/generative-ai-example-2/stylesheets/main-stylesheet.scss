@@ -1,5 +1,5 @@
-$soft-pink: #e9a8e7bf;
-$pink: #b136a9c4;
+$soft-pink: pink;
+$pink: grey;
 $white: #ffffffdd;
 $white-transparent: #ffffffb7;
 $dark-purple: #0b0418;
@@ -69,7 +69,7 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
     text-shadow: 2px 2px 4px #000000;
-    color: $pink;
+    color: $soft-pink;
 }
 
 main {
@@ -97,8 +97,8 @@ section {
     font-size: 4.5rem;
 
     &:hover {
-        background-color: $white;
-        color: $dark-purple;
+        background-color: $pink;
+        color: $white;
     }
 
 }
@@ -244,11 +244,11 @@ canvas {
 ::-webkit-scrollbar {
     width: 10px;
     height: 100%;
-    background-color: $white-transparent;
+    background-color: $pink;
     border-radius: 5px;
 }
 // make the thumb of the scrollbar
 ::-webkit-scrollbar-thumb {
-    background-color: $pink;
+    background-color: $soft-pink;
     border-radius: 5px;
 }

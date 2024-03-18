@@ -60,7 +60,7 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   text-shadow: 2px 2px 4px #000000;
-  color: rgba(177, 54, 169, 0.768627451);
+  color: pink;
 }
 
 main {
@@ -77,7 +77,7 @@ section {
 }
 
 .nav-button {
-  background-color: rgba(233, 168, 231, 0.7490196078);
+  background-color: pink;
   color: #0b0418;
   padding: 0.1vw 5vw 0.5vw 5vw;
   font-size: 1.5rem;
@@ -88,8 +88,8 @@ section {
   font-size: 4.5rem;
 }
 .nav-button:hover {
-  background-color: rgba(255, 255, 255, 0.8666666667);
-  color: #0b0418;
+  background-color: grey;
+  color: rgba(255, 255, 255, 0.8666666667);
 }
 
 .smaller {
@@ -120,7 +120,7 @@ section {
   width: 20vw;
   margin: 2em;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px rgba(233, 168, 231, 0.7490196078);
+  box-shadow: 1px 1px 10px pink;
 }
 .image-gallery-container .nav-button {
   position: absolute;
@@ -232,11 +232,11 @@ canvas {
 ::-webkit-scrollbar {
   width: 10px;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.7176470588);
+  background-color: grey;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(177, 54, 169, 0.768627451);
+  background-color: pink;
   border-radius: 5px;
 }/*# sourceMappingURL=main-stylesheet.css.map */
